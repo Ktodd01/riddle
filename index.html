@@ -37,25 +37,32 @@
             width: 80%;
             margin-top: 20px;
         }
+        .date, .update-time {
+            margin-top: 20px;
+            font-size: 14px;
+            color: grey;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Riddle</h1>
-        <p>What has keys but can't open locks?</p>
+        <p>What has to be broken before you can use it?</p>
         <input type="text" id="guess" placeholder="Type your answer here">
         <button onclick="checkAnswer()">Submit Answer</button>
         <div class="result">
             <p id="resultMessage"></p>
         </div>
         <div class="answer">
-            <p>The answer is: A piano!</p>
+            <p>The answer is: egg</p>
         </div>
+        <div class="date">Date: June 6th</div>
+        <div class="update-time">Updated Everyday at 8:30am</div>
     </div>
     <script>
         let attempts = 0;
         const maxAttempts = 3;
-        const correctAnswer = "piano";
+        const correctAnswer = "egg";
 
         function checkAnswer() {
             const userGuess = document.getElementById('guess').value.trim().toLowerCase();
@@ -76,4 +83,5 @@
     </script>
 </body>
 </html>
+
 
